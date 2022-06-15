@@ -202,3 +202,11 @@ hr{
     border-radius: 50%;
     height:100%;
 }
+
+#meet-up{
+    background: url(../images/dublin-city.webp) no-repeat center center;
+    background-size: cover;
+    width:100%;
+    overflow:hidden;
+
+}
