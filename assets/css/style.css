@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: none;
@@ -14,102 +14,106 @@ body {
 
 /* headings and logo*/
 
-h1, h2{
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color:#252525;
+    color: #252525;
 }
 
 #logo {
-    float:left;
-    font-size:280%;
-    margin-left:30px
+    float: left;
+    font-size: 280%;
+    margin-left: 30px
 }
 
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#menu, #logo{
+#menu,
+#logo {
     line-height: 75px;
 }
 
-#menu ul{
-    float:right;
+#menu ul {
+    float: right;
 }
 
-#menu li{
-    display:inline-block;
+#menu li {
+    display: inline-block;
     list-style: none;
     margin-right: 30px;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
-#menu a:hover{
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
 /* Hero Image and text*/
 
-#hero-outer{
+#hero-outer {
     height: 600px;
-    width:100%;
-    overflow:hidden;
-    position:relative;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-#cover-text, #cover-text h2{
-    color:#fff;
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 
 }
 
-#hero-image{
-    height:600px;
-    width:100%;
-    background:url(../images/hero-image.webp) no-repeat center center;
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.webp) no-repeat center center;
 
     /* Animates hero-image zoom */
-    animation-name:hero-zoom;
+    animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
 /* Creates the Zoom for Hero Image*/
 
-@keyframes hero-zoom{
-    from{
+@keyframes hero-zoom {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
 
-#cover-text{
-    font-size:130%;
+#cover-text {
+    font-size: 130%;
     font-family: Oswald, sans-serif;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 4px;
 
     width: 300px;
-    height:200px;
+    height: 200px;
 
-    padding-top:40px;
-    padding-left:10px;
-    background-color: rgba(241,109,107,.6);
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109, 107, .6);
 
-    bottom:30px;
-    right:150px;
+    bottom: 30px;
+    right: 150px;
     /*
     absolute position was initially to entire page - making the hero-outer image relative,
     has fixed the absolute position, relative to the division
@@ -117,34 +121,66 @@ h1, h2{
     position: absolute;
 }
 
-#club-ethos{
+#club-ethos {
     height: 600px;
 
 }
 
-#left-about{
-    padding-top:30px;
-    width: 33%;
-    float:left;
-    background-color: blue;
-}
-
-#right-about{
+#left-about {
     padding-top: 30px;
-    width:33%;
-    float:right;
-    background-color: silver;
+    width: 33%;
+    float: left;
 }
 
-#center-about{
-padding-top: 30px;
-width:33%;
-/*
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    padding-top: 30px;
+    width: 33%;
+    /*
 no float:center available, so margin is set to 0 and auto,to fill
 up rest of space inbetween.
 center div has to be placed last in index.html and style.css
 for this to work.
 */
-margin: 0 auto;
-background-color:green;
+    margin: 0 auto;
+    background-color: green;
+}
+
+hr{
+    border-top: 1px solid #3a3a3a;
+    width:100%;
+    margin:5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+#welcome{
+    text-align: center;
+}
+
+.right-about-heading h2{
+    text-align: right;
+}
+
+.right-about-heading p{
+    text-align: right;
 }
