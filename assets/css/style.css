@@ -210,3 +210,24 @@ hr{
     overflow:hidden;
 
 }
+
+#meet-up div{
+    color:#fafafa;
+    background-color: rgba(0,0,0,.6);
+    width:20%;
+    height:300px;
+    float:left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+
+    /* with css code above, 20% screen-width and 2px border causes the boxes to overflow out of the background
+    and onto a new line. Using the below css code accounts for this and forces the border/sizing to fit */
+
+    box-sizing: border-box;
+}
+
+#meet-up h2{
+
+color:#fafafa;
+}
