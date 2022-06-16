@@ -150,10 +150,10 @@ for this to work.
     margin: 0 auto;
 }
 
-hr{
+hr {
     border-top: 1px solid #3a3a3a;
-    width:100%;
-    margin:5px 0;
+    width: 100%;
+    margin: 5px 0;
 }
 
 .left-about-heading {
@@ -172,51 +172,51 @@ hr{
     margin-bottom: 50px;
 }
 
-#welcome{
+#welcome {
     text-align: center;
-    margin:20px 0;
-    font-size:280%;
+    margin: 20px 0;
+    font-size: 280%;
 }
 
-.right-about-heading h2{
+.right-about-heading h2 {
     text-align: right;
 }
 
-.right-about-heading p{
+.right-about-heading p {
     text-align: right;
 }
 
-#circle-container{
-    width:300px;
-    height:300px;
-    padding:30px;
-    border-style:solid;
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
     border-color: #ccc;
-    border-width:1px;
+    border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
 }
 
-#circle-cover-bg{
+#circle-cover-bg {
     background: url('../images/ethos-center-image.jpg') no-repeat center center;
     border-radius: 50%;
-    height:100%;
+    height: 100%;
 }
 
-#meet-up{
+#meet-up {
     background: url(../images/dublin-city.webp) no-repeat center center;
     background-size: cover;
-    width:100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 
 }
 
-#meet-up div{
-    color:#fafafa;
-    background-color: rgba(0,0,0,.6);
-    width:20%;
-    height:300px;
-    float:left;
+#meet-up div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
     padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
@@ -227,42 +227,42 @@ hr{
     box-sizing: border-box;
 }
 
-#meet-up h2{
+#meet-up h2 {
 
-color:#fafafa;
+    color: #fafafa;
 }
 
 /* footer */
 
-footer{
+footer {
     height: 150px;
 
 }
 
-.social-networks{
+.social-networks {
     text-align: center;
 }
 
-.social-networks > li{
-    display:inline;
+.social-networks>li {
+    display: inline;
 }
 
 .social-networks i {
     font-size: 160%;
     margin: 1%;
-    padding:5%;
-    color:#3a3a3a
+    padding: 5%;
+    color: #3a3a3a
 }
 
-#photos{
-    clear:both;
+#photos {
+    clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0px;
 }
 
-#photos > img{
-    width:100%;
+#photos>img {
+    width: 100%;
 }
 
 /* Media queries */
@@ -271,32 +271,46 @@ footer{
 
 @media screen and (max-width: 1200px) {
 
-    #club-ethos{
-        width:65%;
+    #club-ethos {
+        width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
 
-    #welcome{
+    #welcome {
         padding: 30% 0;
-        margin:0;
+        margin: 0;
     }
-    
-    #left-about, #right-about{
-        width:100%;
+
+    #left-about,
+    #right-about {
+        width: 100%;
         float: left;
-        padding:0;
+        padding: 0;
 
     }
 
-    #center-about{
-        clear:both;
-        width:100%;
-        float:left;
-        clear:both;
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        clear: both;
     }
 
-    hr{
-        display:none;
+    hr {
+        display: none;
     }
+}
+
+@media screen and (max-width:950px) {
+
+
+     #menu {
+        float: left;
+        clear: left;
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    } 
 }
