@@ -305,12 +305,48 @@ footer {
 @media screen and (max-width:950px) {
 
 
-     #menu {
+    #menu {
         float: left;
         clear: left;
         width: 100%;
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
-    } 
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        /* 
+        As width is set to 90%, this gives a 5% gap either side of the text in club ethos and the margin of the page
+        */
+        width: 90%;
+        height: 1200px;
+        /* below used to center */
+        margin: 0 auto;
+
+    }
+
+    /* below styles the 2 divs, that are child elements of the left-about div, within the club-ethos section,
+    in line with the text for the club ethos styling in the above css rule */
+    .left-about-heading,
+.right-about-heading {
+    width: inherit;
+}
+
+    /* below centers headings in club-ethos section */
+    .left-about-heading h2,
+    .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* below centers paragraphs in club-ethos section */
+    .left-about-heading p,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
 }
